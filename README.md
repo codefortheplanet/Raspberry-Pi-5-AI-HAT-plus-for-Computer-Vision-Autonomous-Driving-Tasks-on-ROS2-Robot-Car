@@ -8,7 +8,9 @@ Push the Hailo AI HAT+ GPIO stacking header onto the Raspberry Pi's GPIO pins, a
 
 https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
 
-Note that because of the height limit of the board space component for this robot car, the AI HAT may need to be installed upside down. I used  16 mm spacers, but consider using a shorter spacer (e.g., ~ 12 mm) so there is enough space to install it normally.  
+Note that because of the height limit of the board space component for this robot car, the AI HAT may need to be installed upside down. I used  16 mm spacers, but consider using a shorter spacer (e.g., ~ 12 mm) so there is enough space to install it normally.
+
+![Illustration](https://github.com/codefortheplanet/Raspberry-Pi-5-AI-HAT-plus-for-Computer-Vision-Autonomous-Driving-Tasks-on-ROS2-Robot-Car/blob/main/Illustration.jpg?raw=true)
 
 ## Install Hailo driver on Raspberry Pi OS
 
