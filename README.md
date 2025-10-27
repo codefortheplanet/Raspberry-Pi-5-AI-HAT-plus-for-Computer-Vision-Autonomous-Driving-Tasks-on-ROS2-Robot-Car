@@ -53,7 +53,9 @@ The datasets can be downloaded from Roboflow:
 https://universe.roboflow.com/kaggle-road-sign-dataset/lisa-bjgh5
 
 Note that the signs usually take a very small portion of the images in this dataset, so a multi-resolution training is needed for robust detection. In the latest version of YOLO, many CLI syntaxes were changed. Here is what I used as a reference:
-
+```
+yolo train detect data=data.yaml model=yolo11l.pt epochs=300 lr0=0.0001 batch=10 imgsz=640 optimizer=AdamW scale=0.5 fliplr=0.5 multi_scale=True
+```
 ## Model Quantization for Raspberry Pi Deployment
 After training, convert the model weights file from one of the stabilized runs ("last" run is usually better than "best" run) into ONNX format and then quantize the weights with Quantization-Aware Fine-Tuning enabled for higher precision. You need to register a development account on the Hailo development zone to download the Hailo8 AI Software Suite Docker and run it on a PC (preferably with a GPU installed, and the VRAM should be at least 16GB).    
 
